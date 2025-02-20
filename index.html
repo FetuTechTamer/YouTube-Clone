@@ -7,9 +7,10 @@
     <title>YouTube Clone</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a5e51ce083.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
 </head>
-<body>
-    <div class="container"></div>
+<body class="sidebar-hidden">
+    <div class="container">
     <!------header/nav-->
     <header>
         <nav class="navbar">
@@ -36,6 +37,9 @@
             </div>
 
             <div class="nav-section nav-right">
+                <button class="nav-button search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
                 <button class="nav-button theme-button">
                     <i class="fa-solid fa-moon"></i>
                 </button>
@@ -45,12 +49,23 @@
     </header>
 
     <main class="main-layout">
+        <div class="screen-overlay"></div>
         <!---slider-->
         <aside class="sidebar">
+            <div class="nav-section nav-left">
+                <button class="nav-button menu-button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a href="#" class="nav-logo"> 
+                    <img src="images/youtube.png" alt="Logo" class="logo-image">
+                    <h2 class="logo-text">YouTube</h2>
+                </a>
+            </div>
+
             <div class="link-container">
                 <div class="link-section">
                     <a href="#" class="link-item">
-                        <i class="fa-regular fa-house"></i>Home
+                        <i class="fa-solid fa-house"></i>Home
                     </a>
                     <a href="#" class="link-item">
                         <i class="fa-solid fa-video"></i>Shorts
@@ -68,7 +83,7 @@
                         <i class="fa-solid fa-clock-rotate-left"></i>History
                     </a>
                     <a href="#" class="link-item">
-                        <i class="fa-duotone fa-regular fa-list-music"></i>Playlists
+                        <i class="fa-solid fa-list-music"></i> Playlists
                     </a>
                     <a href="#" class="link-item">
                         <i class="fa-thin fa-camera"></i>Your Videos
@@ -95,7 +110,7 @@
                         <i class="fa-solid fa-music"></i>Music
                     </a>
                     <a href="#" class="link-item">
-                        <i class="fa-regular fa-signal-stream"></i> Live
+                        <i class="fa-thin fa-signal-stream"></i> Live
                     </a>
                     <a href="#" class="link-item">
                         <i class="fa-light fa-gamepad-modern"></i> Gaming
@@ -108,6 +123,7 @@
                     </a>
                     <a href="#" class="link-item">
                         <i class="fa-solid fa-lightbulb"></i>Learning
+                    </a>   
                     <a href="#" class="link-item">
                         <i class="fa-solid fa-vest-patches"></i>Fashion & beauty
                     </a>
@@ -138,33 +154,42 @@
                         <i class="fa-regular fa-circle-question"></i>Help
                     </a>
                     <a href="#" class="link-item">
-                        <i class="fa-duotone fa-solid fa-message-exclamation"></i>Send feedback
+                        <i class="fa-solid fa-message-exclamation"></i> Send feedback
                     </a>
                 </div>
                 <div class="section-separator"></div>
+                <div>
+                    <p>
+                        About Press Copyright Contact us Creator Advertise Developers
+                    </p><br>
+                    <p>
+                        Terms Privacy Policy & Safety How YouTube works Test new features
+                    </p><br>
+                    <p>&copy;2025 Google LLC</p>
+                </div>
 
             </div>
         </aside>
 
         <div class="content-wrapper">
-            <!---catagory list--->
-            <div class="catagory-list">
-                <button class="catagory-button active">All</button>
-                <button class="catagory-button">Website</button>
-                <button class="catagory-button">Music</button>
-                <button class="catagory-button">Gaming</button>
-                <button class="catagory-button">Node.js</button>
-                <button class="catagory-button">Javascript</button>
-                <button class="catagory-button">Typescript</button>
-                <button class="catagory-button">Coding</button>
-                <button class="catagory-button">Tailwind css</button>
-                <button class="catagory-button">Website</button>
-                <button class="catagory-button">Music</button>
-                <button class="catagory-button">Gaming</button>
-                <button class="catagory-button">Node.js</button>
-                <button class="catagory-button">Javascript</button>
-                <button class="catagory-button">Typescript</button>
-                <button class="catagory-button">Coding</button>
+            <!---category list--->
+            <div class="category-list">
+                <button class="category-button active">All</button>
+                <button class="category-button">Website</button>
+                <button class="category-button">Music</button>
+                <button class="category-button">Gaming</button>
+                <button class="category-button">Node.js</button>
+                <button class="category-button">Javascript</button>
+                <button class="category-button">Typescript</button>
+                <button class="category-button">Coding</button>
+                <button class="category-button">Tailwind css</button>
+                <button class="category-button">Website</button>
+                <button class="category-button">Music</button>
+                <button class="category-button">Gaming</button>
+                <button class="category-button">Node.js</button>
+                <button class="category-button">Javascript</button>
+                <button class="category-button">Typescript</button>
+                <button class="category-button">Coding</button>
             </div>
 
             <!---video list--->
@@ -313,5 +338,6 @@
             </div>
         </div>
     </main>
+</div>
 </body>
 </html>
