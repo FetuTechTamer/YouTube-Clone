@@ -224,6 +224,15 @@ body.sidebar-hidden .main-layout .sidebar {
     width: 100%;
 }
 
+.footer-text p {
+    font-size: 12px; 
+    color: #A9A9A9;    
+    margin: 0;      
+}
+.footer-text .upper-text{
+    color: #000;   
+}
+
 .content-wrapper .category-list {
     display: flex;
     gap: 0.7rem;
