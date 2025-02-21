@@ -20,6 +20,19 @@
     --overlay-dark-color: rgba(0, 0, 0, 0.6);
 }
 
+/* Color variables for light theme */
+body.dark-mode{
+    --white-color: #171717;
+    --black-color: #d4d4d4;
+    --light-white-color: #333;
+    --light-gray-color: #404040;
+    --border-color: #737373;
+    --secondary-color: #d4d4d4;
+}
+
+body{
+    background: var(--white-color);
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -70,6 +83,7 @@ header, .category-list {
 }
 
 .container .nav-button i {
+    color: var(--black-color);
     display: flex;
     font-size: 1.5rem;
     align-items: center;
@@ -89,6 +103,7 @@ header, .category-list {
 
 .navbar .nav-center {
     display: flex;
+    gap: 0.5rem;
     width: 100%;
     justify-content: center;
 }
@@ -105,8 +120,14 @@ header, .category-list {
     padding: 0 1rem;
     outline: none;
     font-size: 1rem;
+    color: var(--black-color);
+    background-color: var(--white-color);
     border-radius: 3.1rem 0 0 3.1rem;
     border: 1px solid var(--border-color);
+}
+
+.navbar .search-form .search-input{
+    border-color: var(--primary-color);
 }
 
 .navbar .search-form .search-button {
@@ -124,6 +145,7 @@ header, .category-list {
 .main-layout {
     display: flex;
     overflow-y: auto;
+    scrollbar-color:#a6a6a6 transparent ;
 }
 
 .main-layout .sidebar {
@@ -218,6 +240,7 @@ body.sidebar-hidden .main-layout .sidebar {
     white-space: nowrap;
     padding: 0.4rem 0.75rem;
     border-radius: 0.5rem;
+    color: var(--black-color);
     background: var(--light-gray-color);
 }
 
